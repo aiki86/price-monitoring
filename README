@@ -1,0 +1,16 @@
+Create a config.json file similar to the following
+
+{
+"items": [
+	{
+		"name": "output-file-name",
+		"url": "http://www.url.com",
+		"locator": "//strong[@class='price']"
+	},
+	{
+		"name": "output-file-name",
+		"url": "http://www.url.com",
+		"locator": "//strong[@class='price']"
+	}
+]
+}
