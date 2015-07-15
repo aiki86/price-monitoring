@@ -1,10 +1,16 @@
+require 'json'
+
 class ConfigReader
 
 @@configContent = ""
 
-	def getItems
-		@@configContent = File.read(File.dirname(File.realpath(__FILE__)) + '/main.config')
-		puts @@configContent
+	def readConfig
+		configFileContent = File.read(File.dirname(File.realpath(__FILE__)) + '/config.json')
+		@@configContent = JSON.parse(configFileContent)
+	end
+
+	def getConfig
+		return @@configContent
 	end
 
 end
